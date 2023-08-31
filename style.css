@@ -5,12 +5,22 @@
     font-family: "Gilroy";
 }
 
+:root{
+    --color01: #000000;
+    --color02: #6C757D;
+    --color03: #DADADA;
+    --color04: #FFFFFF;
+    --color05: #20B2AA;
+    --color06: #168AAD;
+    --color07: #25FF3E;
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: var(--color01);
+    color: var(--color04);
 }
 
 .main {
@@ -23,7 +33,7 @@ body {
     height: 100px;
     width: 100vw;
     /* background-color: red; */
-    border-bottom: 3px solid #dadada;
+    border-bottom: 3px solid var(--color03);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,8 +43,8 @@ body {
 .nav button{
     font-size: 1vw;
     padding: 0.7vw 1.5vw;
-    background-color: #168aad;
-    color: #25ff3e;
+    background-color: var(--color06);
+    color: var(--color07);
     border: none;
     border-radius: 5px;
     font-weight: 700;
@@ -84,7 +94,7 @@ body {
 }
 
 .left h1 span{
-    color: #25ff3e;
+    color: var(--color07);
 }
 
 .left p{
@@ -93,15 +103,15 @@ body {
     /* padding: 1.7vh; */
     margin-top: 5vh;
     margin-bottom: 7vh;
-    color: #6c757d;
+    color: var(--color02);
     width: 80%;
 }
 
 .content button{
     font-size: 2vw;
     padding: 1vw 2vw;
-    background-color: #168aad;
-    color: #25ff3e;
+    background-color: var(--color06);
+    color: var(--color07);
     border: none;
     border-radius: 5px;
     font-weight: 700;
@@ -121,8 +131,8 @@ body {
 
 @media (max-width:600px) {
     .nav {
-        background-color: lightseagreen;
-        color: white;
+        background-color: var(--color05);
+        color: var(--color04);
         padding: 0 5vw;
         height: 60px;
     }
